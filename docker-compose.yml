@@ -1,0 +1,19 @@
+version: "3"
+services:
+  web: # service name
+    build:
+      context: . # location of our Dockerfile
+      dockerfile: Dockerfile.dev # name of the file in that context or path above
+    ports: # list of port forwardings to do
+      - "3000:3000" # host:container
+    volumes:
+      - /app/node_modules # persist /app/node_modules
+      - .:/app # everything in current dir -> /app in container to watch for file changes
+  # tests:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile.dev
+  #   volumes:
+  #     - /app/node_modules
+  #     - .:/app
+  #   command: ["npm", "run", "test"]
