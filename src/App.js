@@ -16,8 +16,18 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Let's Learn Docker & React!!! Docker!!!
+          Let's Learn Docker & React{" "}
         </a>
+        <span role="img" aria-label="smiling_face_with_sunglasses">
+          😎
+        </span>
+        <p>
+          Made with{" "}
+          <span role="img" aria-label="heart">
+            ❤️
+          </span>{" "}
+          by Abhishek Ghosh
+        </p>
       </header>
     </div>
   );
